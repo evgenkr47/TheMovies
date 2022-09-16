@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviestest7.MAIN
 import com.example.moviestest7.R
@@ -35,12 +36,14 @@ class FavoriteFragment : Fragment() {
     }
     private fun init(){
         val viewModel = ViewModelProvider(this).get(FavoriteFragmentViewModel::class.java)
-        viewModel.getAllMovies().observe(this, {list ->
+        viewModel.getAllMovies().observe(viewLifecycleOwner, {list ->
             adapter.setList(list.asReversed())
         })
         recyclerView = binding.rcFavorite
         recyclerView.adapter = adapter
     }
+
+
 
     companion object{
         fun clickMovie(model: MoviesItemModel){

@@ -11,6 +11,5 @@ class FavoriteFragmentViewModel: ViewModel() {
     fun getAllMovies(): LiveData<List<MoviesItemModel>> {
 
            return REALIZATION.allMovies
-
     }
 }

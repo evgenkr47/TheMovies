@@ -50,8 +50,7 @@ class DetailFragment : Fragment() {
 
         Glide.with(MAIN)
             .load("https://image.tmdb.org/t/p/w300_and_h450_bestv2${currentMovie.poster_path}")
-            .centerCrop()
-            .placeholder(R.drawable.ic_launcher_foreground)
+            .placeholder(R.drawable.movieplaceholder)
             .into(binding.imgFavorite)
 
         binding.imgFavoriteDetail.setOnClickListener {
