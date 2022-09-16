@@ -15,4 +15,6 @@
   * Glide
 
 >P.S: приложение было написано ещё до изучения Clean Architecture
+
+<img src= "https://github.com/evgenkr47/TheMovies/raw/master/img/themovies1.jpg" width="200" /> <img src= "https://github.com/evgenkr47/TheMovies/raw/master/img/themovies2.jpg" width="200" /> <img src= "https://github.com/evgenkr47/TheMovies/raw/master/img/themovies3.jpg" width="200" />
   
